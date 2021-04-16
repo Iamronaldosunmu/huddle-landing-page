@@ -1,0 +1,9 @@
+html {
+  font-size: 62.5%;
+}
+.icon {
+  fill: white;
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+}
