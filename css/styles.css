@@ -1,6 +1,21 @@
 html {
   font-size: 62.5%;
 }
+body {
+  background: hsl(257, 40%, 49%);
+}
+.container1 {
+  position: relative;
+}
+.mobile-pattern {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+.container2 {
+  padding: 2.2rem;
+}
 .icon {
   fill: white;
   height: 32px;
@@ -8,11 +23,8 @@ html {
   object-fit: cover;
 }
 .logo img {
-  width: 150px;
+  width: 90px;
 }
 .logo {
   display: block;
-}
-body {
-  background: url("images/bg-desktop.svg");
 }
