@@ -8,8 +8,11 @@ html {
   object-fit: cover;
 }
 .logo img {
-  width: 40vw;
+  width: 150px;
 }
 .logo {
   display: block;
+}
+body {
+  background: url("images/bg-desktop.svg");
 }
