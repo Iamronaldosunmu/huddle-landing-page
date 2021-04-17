@@ -3,6 +3,7 @@ html {
 }
 body {
   background: hsl(257, 40%, 49%);
+  font-family: "Open Sans", sans-serif;
 }
 .container1 {
   position: relative;
@@ -14,7 +15,7 @@ body {
   z-index: -1;
 }
 .container2 {
-  padding: 2.2rem;
+  padding: 2.2rem 2.8rem;
 }
 /* Icon */
 .icon {
@@ -45,3 +46,22 @@ body {
   border: 3px solid white;
 }
 /*TODO: Add a button hover animation */
+
+/* Text */
+.text {
+  color: white;
+  text-align: center;
+  line-height: 1.5;
+}
+.text__heading {
+  font-size: 1.8rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+.text__body {
+  font-size: 1.1rem;
+  font-weight: 300;
+}
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Poppins', sans-serif;*/
