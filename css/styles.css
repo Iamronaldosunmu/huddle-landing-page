@@ -35,14 +35,14 @@ body {
 .btn {
   display: inline-block;
 
-  padding: 0.8rem 7rem;
-  font-size: 1.8rem;
+  padding: 0.8rem 5.3rem;
+  font-size: 1rem;
   border-radius: 30px;
   text-decoration: none;
   color: hsl(257, 40%, 49%);
   background: white;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-
+  outline: 0;
   border: 3px solid white;
 }
 /*TODO: Add a button hover animation */
@@ -52,16 +52,23 @@ body {
   color: white;
   text-align: center;
   line-height: 1.5;
+  margin-bottom: 1.5rem;
 }
 .text__heading {
   font-size: 1.8rem;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 .text__body {
   font-size: 1.1rem;
   font-weight: 300;
 }
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif;*/
+/* Text Button Block*/
+.text-button-block {
+  text-align: center;
+}
+/* Huddle Image Block */
+.huddle__image {
+  width: 100%;
+}
