@@ -18,6 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>
       Frontend Mentor | Huddle landing page with single introductory section
     </title>
@@ -29,10 +30,10 @@
           <img src="images/logo.svg" />
         </header>
         <div class="grid grid--1x2">
-          <div class="image-block">
+          <div class="image-block" data-aos="fade-up-right">
             <img src="images/illustration-mockups.svg" class="huddle__image" />
           </div>
-          <div class="text-button-block">
+          <div class="text-button-block" data-aos="fade-up-left">
             <article class="text">
               <h1 class="text__heading">
                 Build The Community Your Fans Will Love
@@ -44,10 +45,20 @@
               </p>
             </article>
             <a href="#" class="btn">Register</a>
+            <div class="icon-block">
+              <img src="images/icons8-twitter-32.png" class="icon" />
+              <img src="images/icons8-facebook.svg" class="icon" />
+              <img src="images//icons8-instagram.svg" class="icon" />
+            </div>
           </div>
         </div>
       </div>
-      <img src="images/bg-mobile.svg" class="mobile-pattern" />
+      <img src="images/bg-mobile.svg" class="pattern mobile" />
+      <img src="images/bg-desktop.svg" class="pattern desktop" />
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

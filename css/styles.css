@@ -8,11 +8,27 @@ body {
 .container1 {
   position: relative;
 }
-.mobile-pattern {
+.pattern {
   width: 100%;
   position: absolute;
   top: 0;
   z-index: -1;
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .mobile {
+    display: block;
+  }
+}
+@media screen and (min-width: 768px) {
+  .mobile {
+    display: none;
+  }
+  .desktop {
+    display: block;
+    object-fit: cover;
+    height: 100vh;
+  }
 }
 .container2 {
   padding: 2.2rem 2.8rem;
@@ -20,13 +36,25 @@ body {
 /* Icon */
 .icon {
   fill: white;
+  outline: white;
   height: 32px;
   width: 32px;
   object-fit: cover;
+  margin: 0.5rem;
+  z-index: 1;
+  transition: transform 0.3s;
+}
+.icon:hover {
+  transform: scale(1.5);
 }
 /* Logo */
 .logo img {
   width: 90px;
+}
+@media screen and (min-width: 768px) {
+  .logo img {
+    width: 120px;
+  }
 }
 .logo {
   display: block;
@@ -44,9 +72,19 @@ body {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
   outline: 0;
   border: 3px solid white;
+  transition: all 0.4s;
 }
 /*TODO: Add a button hover animation */
 
+.btn:hover {
+  transform: scale(1.1);
+  font-size: 1.2rem;
+  background: none;
+  color: white;
+  transform: translateX(rem);
+  transform: translateY(1rem);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
 /* Text */
 .text {
   color: white;
@@ -67,7 +105,7 @@ body {
 }
 @media screen and (min-width: 768px) {
   .text__heading {
-    font-size: 3rem;
+    font-size: 3.6rem;
   }
 }
 .text__body {
@@ -82,21 +120,46 @@ body {
 @media screen and (min-width: 768px) {
   .text-button-block {
     text-align: left;
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .text-button-block {
+    margin-top: 2vw;
   }
 }
 /* Huddle Image Block */
 .image-block {
   max-width: 500px;
 }
+@media screen and (min-width: 768px) {
+  .image-block {
+    max-width: 650px;
+  }
+}
 .huddle__image {
   width: 100%;
 }
 
+/* Icons Block */
+.icon-block {
+  margin-top: 8rem;
+  z-index: 1;
+}
+@media screen and (min-width: 768px) {
+  .icon-block {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
 /* Grids */
 .grid {
   display: grid;
+  position: relative;
   margin-top: 3rem;
   justify-content: center;
+
   row-gap: 3.3rem;
 }
 @media screen and (min-width: 768px) {
@@ -104,5 +167,6 @@ body {
     grid-template-columns: 1fr 1fr;
     column-gap: 3rem;
     margin-top: 8rem;
+    justify-items: center;
   }
 }
