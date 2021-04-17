@@ -16,15 +16,32 @@ body {
 .container2 {
   padding: 2.2rem;
 }
+/* Icon */
 .icon {
   fill: white;
   height: 32px;
   width: 32px;
   object-fit: cover;
 }
+/* Logo */
 .logo img {
   width: 90px;
 }
 .logo {
   display: block;
 }
+/* Buttons */
+.btn {
+  display: inline-block;
+
+  padding: 0.8rem 7rem;
+  font-size: 1.8rem;
+  border-radius: 30px;
+  text-decoration: none;
+  color: hsl(257, 40%, 49%);
+  background: white;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+
+  border: 3px solid white;
+}
+/*TODO: Add a button hover animation */
