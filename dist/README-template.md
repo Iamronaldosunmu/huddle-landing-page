@@ -2,7 +2,6 @@
 
 view the live site here: https://Iamronaldosunmu.github.io/huddle-landing-page
 
-
 This is a solution to the [Huddle landing page with single introductory section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/huddle-landing-page-with-a-single-introductory-section-B_2Wvxgi0). 
 
 Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
@@ -37,7 +36,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](dist/screenshot.PNG)
+![](screenshot.PNG)
 
 
 ### Links
